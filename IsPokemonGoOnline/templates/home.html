@@ -1,0 +1,27 @@
+{% extends "layouts/page-template.html" %}
+{% block statusblock %}
+<h2>{{status}}</h2>
+<p class="lead">Ping: {{ping}}</p>
+{% endblock %}
+
+{% block content %}
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Começo Post -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-3923243390262589"
+     data-ad-slot="5038016383"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<p>Discover if it's a nice time to get out of your sweet home and get some Pokemons! Get updates of the server status right on this page!</p>
+{% endblock %}
+
+{% block about %}
+<p>This software was built to help players find out if they can leave home playing Pokemon Go when the servers are available!</p>
+<p>Soon we will release an API to check if the Pokemon Go is running or in trouble!</p>
+{% endblock %}
+
+{% block footer%}
+<b>Pokemon is a Nintendo Registered Trademark!</b> This is a cool software! See the source code on <a href="http://www.github.com/vmesel/IPGOO">GitHub</a>
+{% endblock %}

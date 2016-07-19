@@ -1,3 +1,3 @@
 #Is Pokemon Go Online?
 
-- Make the 
+This is the repository of the ISPGO.net website!
