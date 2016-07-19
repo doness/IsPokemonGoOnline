@@ -50,5 +50,11 @@ def homeFunc():
     b = GetCONInfo()
     return render_template("home.html", statusserver=b[1], ping=b[0], table=servers)
 
+@app.route("/api/", methods=["GET","POST"])
+def apiFunc():
+    f = open("output.json")
+    js = json.load(f)
+    return json.dumps(js, indent=4, sort_keys=True)
+
 if __name__ == "__main__":
     app.run(debug=True, host="0.0.0.0")
