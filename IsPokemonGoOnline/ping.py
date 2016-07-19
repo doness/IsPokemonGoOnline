@@ -119,18 +119,19 @@ def do_one(dest_addr, timeout, psize):
 
 
 def verbose_ping(dest_addr, timeout = 2, count = 1, psize = 64):
+    """
+    Send `count' ping with `psize' size to `dest_addr' with
+    the given `timeout' and display the result.
+    """
     for i in xrange(count):
         try:
             delay  =  do_one(dest_addr, timeout, psize)
         except socket.gaierror, e:
-            return e[1]
+            return "timeout"
             break
-
         if delay  ==  None:
-            return timeout
+            return "timeout"
         else:
             delay  =  delay * 1000
             return delay
-    print
-
-
+            #print "get ping in %0.4fms" % delay

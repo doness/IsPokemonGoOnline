@@ -1,0 +1,32 @@
+{
+    "GER": {
+        "delay": 340, 
+        "ip": "119.81.248.44", 
+        "quality": "Unstable"
+    }, 
+    "NED": {
+        "delay": 204, 
+        "ip": "37.58.73.184", 
+        "quality": "Unstable"
+    }, 
+    "US": {
+        "delay": 226, 
+        "ip": "74.125.136.95", 
+        "quality": "Unstable"
+    }, 
+    "AUTH": {
+        "delay": "timeout", 
+        "ip": "54.241.32.9", 
+        "quality": "Offline"
+    }, 
+    "UK": {
+        "delay": 162, 
+        "ip": "130.211.188.132", 
+        "quality": "Online"
+    }, 
+    "CON": {
+        "delay": "timeout", 
+        "ip": "54.241.32.23", 
+        "quality": "Offline"
+    }
+}
